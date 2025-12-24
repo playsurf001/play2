@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input id='user' placeholder='Usuário'>
+<input id='pass' placeholder='Senha' type='password'>
+<button onclick='login()'>Entrar</button>
+<script type='module'>
+import { login as apiLogin } from "./assets/api.js"
+window.login = async function() {
+  const r = await apiLogin(user.value, pass.value)
+  if (r.ok) location.href = "index.html"
+  else alert("Login inválido")
+}
+</script>
+</body>
+</html>
