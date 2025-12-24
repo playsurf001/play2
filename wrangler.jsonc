@@ -1,8 +1,5 @@
 {
-  "name": "plsrf-worker",
-  "compatibility_date": "2025-12-24",
-  "main": "src/index.js",
-  "assets": {
-    "directory": "./dist"
-  }
+  "name": "play2",
+  "main": "_worker.js",
+  "compatibility_date": "2025-12-24"
 }
